@@ -1,5 +1,5 @@
-import random
 import logging
+import random
 
 logging.basicConfig(filename="calculate_emp_wage.log",
                     filemode='a',
@@ -238,9 +238,9 @@ def update_employee():
                 input("Enter new working days to update : "))
 
             company_obj.update_emp(emp_object, {
-                                                "update_wage": update_wage,
-                                                "update_working_hours": update_working_hours,
-                                                "update_working_days": update_working_days})
+                "update_wage": update_wage,
+                "update_working_hours": update_working_hours,
+                "update_working_days": update_working_days})
 
 
     except Exception as e:
@@ -312,7 +312,7 @@ def delete_company():
         multi_comp.remove_company(company_name)
         company_object = multi_comp.get_company_object(company_name)
         if not company_object:
-            print("There is no",company_name,"company, Enter correct one")
+            print("There is no", company_name, "company, Enter correct one")
 
     except ValueError:
         logging.error("Enter valid input")
