@@ -1,3 +1,3 @@
 EmployeeWageProject
 
-Calculating employee monthly wage and performing CURD operation like if wanna update any employee calculation infornation so we can do that using this program also can delete and add employee using this program
+Calculating employee monthly wage, using CURD operation to add, delete, update, get and display data of employee and  reading and writing data to the CSV and Json file and also testing the employee wage code using pytest
